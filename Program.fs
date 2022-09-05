@@ -1,16 +1,22 @@
 ﻿namespace gapic
 
 open System
+open System.Reflection
 open Argu
 open Arguments
-open Profile
 
 module Program =
 
     let runCommands (parser: ArgumentParser<CliArguments>) (args: string array) =
         match (parser.Parse args).GetAllResults() with 
-        | [ Profile p ] -> 
-            p |> getUser
+        | [ Profile p ] ->  
+            p |> Profile.getUser
+
+        | [ Version ] -> 
+            Assembly.GetExecutingAssembly().GetName().Version |> string
+
+        | [ Help ] -> 
+            parser.PrintUsage()
 
         | _ -> parser.PrintUsage()
 

@@ -7,9 +7,10 @@
     <PublishSingleFile>true</PublishSingleFile>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <PublishTrimmed>true</PublishTrimmed>
-    <Version>0.0.0.1</Version>
+    <Version>0.0.0.2</Version>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include=".config\dotnet-tools.json" />
     <Content Include="Data\Profile.json" />
     <None Include="paket.dependencies" />
     <None Include="paket.references" />
