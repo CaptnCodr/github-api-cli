@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>gapic</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <PublishSingleFile>true</PublishSingleFile>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishTrimmed>true</PublishTrimmed>
+    <Version>0.0.0.1</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Data\Profile.json" />
+    <None Include="paket.dependencies" />
+    <None Include="paket.references" />
+    <Compile Include="Arguments.fs" />
+    <Compile Include="Profile.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project=".paket\Paket.Restore.targets" />
+</Project>
