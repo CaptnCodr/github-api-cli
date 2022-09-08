@@ -9,8 +9,8 @@ module Program =
 
     let runCommands (parser: ArgumentParser<CliArguments>) (args: string array) =
         match (parser.Parse args).GetAllResults() with 
-        | [ Profile p ] ->  
-            p |> Profile.getUser
+        | [ User p ] ->  
+            p |> Users.getUser
 
         | [ Version ] -> 
             Assembly.GetExecutingAssembly().GetName().Version |> string

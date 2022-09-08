@@ -11,11 +11,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include=".config\dotnet-tools.json" />
-    <Content Include="Data\Profile.json" />
+    <Content Include="Data\Users.json" />
     <None Include="paket.dependencies" />
     <None Include="paket.references" />
     <Compile Include="Arguments.fs" />
-    <Compile Include="Profile.fs" />
+    <Compile Include="Users.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <ItemGroup />

@@ -4,12 +4,12 @@ open FsHttp
 open FSharp.Data
 open System
 
-module Profile = 
+module Users = 
 
     [<Literal>]
     let Url = "https://api.github.com/users"
 
-    type ProfileResponse = JsonProvider<"./Data/Profile.json", ResolutionFolder=__SOURCE_DIRECTORY__>
+    type ProfileResponse = JsonProvider<"./Data/Users.json", ResolutionFolder=__SOURCE_DIRECTORY__>
 
     let getUser (user: string) : string = 
         http {
