@@ -22,7 +22,6 @@ module Program =
 
     [<EntryPoint>]
     let main ([<ParamArray>] argv: string[]): int =
-
         try 
             (ArgumentParser.Create<CliArguments>(), argv)
             ||> runCommands 

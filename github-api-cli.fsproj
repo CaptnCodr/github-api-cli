@@ -7,17 +7,26 @@
     <PublishSingleFile>true</PublishSingleFile>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <PublishTrimmed>true</PublishTrimmed>
-    <Version>0.0.0.2</Version>
+    <Version>0.0.0.3</Version>
   </PropertyGroup>
   <ItemGroup>
     <Content Include=".config\dotnet-tools.json" />
     <Content Include="Data\Users.json" />
+    <Compile Include="paket-files\CaptnCodr\FSharpExtensions\ResourceExtension.fs">
+      <Paket>True</Paket>
+      <Link>Resources/ResourceExtension.fs</Link>
+    </Compile>
+    <Compile Include="Resources\Resources.fs" />
     <None Include="paket.dependencies" />
     <None Include="paket.references" />
     <Compile Include="Arguments.fs" />
     <Compile Include="Users.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Strings.resx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
   <Import Project=".paket\Paket.Restore.targets" />
 </Project>

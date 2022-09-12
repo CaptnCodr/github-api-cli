@@ -1,4 +1,6 @@
-﻿FSharp.Core
+﻿File: ResourceExtension.fs Resources
+
+FSharp.Core
 FSharp.Data
 Argu
 FsHttp

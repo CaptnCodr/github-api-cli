@@ -22,3 +22,6 @@ NUGET
       System.Windows.Extensions (>= 6.0)
     System.Windows.Extensions (6.0)
       System.Drawing.Common (>= 6.0)
+GITHUB
+  remote: CaptnCodr/FSharpExtensions
+    ResourceExtension.fs (d5e119b4036c3c96aaf886467df3c6e5399790fd)
