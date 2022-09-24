@@ -12,8 +12,7 @@ module Resources =
         | Arguments_Version
         | Arguments_Help
 
-        member this.ResourceString = 
-            ResourceFile |> resourceManager |> getResourceString this
+        member this.ResourceString = ResourceFile |> resourceManager |> getResourceString this
 
-        member this.FormattedString ([<System.ParamArray>] args) =
+        member this.FormattedString([<System.ParamArray>] args) =
             ResourceFile |> resourceManager |> getFormattedString this args
