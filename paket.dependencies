@@ -7,3 +7,4 @@ nuget FSharp.Core
 nuget FSharp.Data
 nuget Argu
 nuget FsHttp
+nuget Fli

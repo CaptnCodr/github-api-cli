@@ -4,6 +4,8 @@ NUGET
     Argu (6.1.1)
       FSharp.Core (>= 4.3.2)
       System.Configuration.ConfigurationManager (>= 4.4)
+    Fli (0.9)
+      FSharp.Core (>= 5.0.2)
     FSharp.Core (6.0.6)
     FSharp.Data (5.0.2)
       FSharp.Core (>= 5.0.1)
