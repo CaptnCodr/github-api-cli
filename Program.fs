@@ -20,6 +20,14 @@ module Program =
             |> Command.execute
             |> Output.toText
 
+        | [ Issues is ] -> 
+            cli {
+                Exec "gh"
+                Arguments $"issue list --repo {is}"
+            }
+            |> Command.execute
+            |> Output.toText
+
         | [ Version ] -> Assembly.GetExecutingAssembly().GetName().Version |> string
 
         | [ Help ] -> parser.PrintUsage()
