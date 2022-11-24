@@ -17,11 +17,11 @@
       <Link>Resources/ResourceExtension.fs</Link>
     </Compile>
     <Compile Include="Resources\Resources.fs" />
-    <None Include="paket.dependencies" />
-    <None Include="paket.references" />
     <Compile Include="Arguments.fs" />
     <Compile Include="Users.fs" />
     <Compile Include="Program.fs" />
+    <None Include="paket.dependencies" />
+    <None Include="paket.references" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Resources\Strings.resx">
