@@ -17,8 +17,7 @@ module Arguments =
             member this.Usage =
                 match this with
                 | User _ -> Arguments_User.ResourceString
-
-                | Repo _ -> "Repo"
-                | Issues _ -> "Issues of specified repository."
+                | Repo _ -> Arguments_Repo.ResourceString
+                | Issues _ -> Arguments_Issues.ResourceString
                 | Version -> Arguments_Version.ResourceString
                 | Help -> Arguments_Help.ResourceString

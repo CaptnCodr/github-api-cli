@@ -9,6 +9,8 @@ module Resources =
 
     type Resource =
         | Arguments_User
+        | Arguments_Repo
+        | Arguments_Issues
         | Arguments_Version
         | Arguments_Help
 

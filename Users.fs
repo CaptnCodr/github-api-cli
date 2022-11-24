@@ -14,8 +14,8 @@ module Users =
     let getUser (user: string) : string =
         http {
             GET $"{Url}/{user}"
-            header ("Accept") ("application/vnd.github+json")
-            UserAgent("GitHub API CLI")
+            header "Accept" "application/vnd.github+json"
+            UserAgent "GitHub API CLI"
         }
         |> Request.send
         |> Response.toText

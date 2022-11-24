@@ -101,6 +101,12 @@
   <data name="Arguments_User" xml:space="preserve">
     <value>User profile of specific user.</value>
   </data>
+  <data name="Arguments_Repo" xml:space="preserve">
+    <value>Show specific repo with: User/Repo</value>
+  </data>
+  <data name="Arguments_Issues" xml:space="preserve">
+    <value>Show issues of specified repository.</value>
+  </data>
   <data name="Arguments_Version" xml:space="preserve">
     <value>Shows actual application version.</value>
   </data>
