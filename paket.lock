@@ -9,7 +9,7 @@ NUGET
     FSharp.Core (7.0)
     FSharp.Data (5.0.2)
       FSharp.Core (>= 5.0.1)
-    FsHttp (9.1.2)
+    FsHttp (10.0)
       FSharp.Core (>= 5.0)
     Microsoft.Win32.SystemEvents (7.0)
     System.Configuration.ConfigurationManager (7.0)
